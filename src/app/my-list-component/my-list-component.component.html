@@ -1,0 +1,8 @@
+<div class="center">
+<input type="text" [(ngModel)]="filterText">
+    <button (click)="filter()">Filter</button>
+    <ul>
+      <li *ngFor="let item of items | filter:filterText">{{item}}</li>
+    </ul>
+    <button (click)="sort()">Sort Alphabetically</button>
+</div>
